@@ -6,6 +6,32 @@ Pense assim: a Vercel é como uma **banca de revistas online**. Você entrega o 
 
 ---
 
+## Deploy pelo GitHub (recomendado)
+
+Repositório: `Better-Together-Systemic/copa-da-minha-vida`
+
+Na tela **New Project** da Vercel, use **exatamente** estas opções:
+
+| Campo | Valor correto |
+|-------|----------------|
+| **Root Directory** | deixe em **`.`** (raiz do repositório) — **não** use `src` |
+| **Framework Preset** | **Other** |
+| **Build Command** | vazio |
+| **Output Directory** | `src` |
+
+O `vercel.json` na raiz do repo já define isso. Se você colocar **Root Directory = `src`**, a Vercel procura os arquivos em `src/src` e o deploy falha.
+
+Depois de clicar em **Deploy**, o site fica em algo como `https://copadaminhavida.vercel.app`.
+
+Se já criou o projeto com Root Directory errado:
+
+1. No painel da Vercel, abra o projeto → **Settings** → **General**
+2. Em **Root Directory**, clique em **Edit** e volte para **`.`** (raiz)
+3. Em **Build & Development Settings**, confira **Output Directory** = `src`
+4. Vá em **Deployments** → nos três pontinhos do último deploy → **Redeploy**
+
+---
+
 ## Jeito mais fácil: arrastar e soltar (não precisa instalar nada)
 
 1. Entre em **https://vercel.com** e crie uma conta gratuita (pode usar o login do Google).
