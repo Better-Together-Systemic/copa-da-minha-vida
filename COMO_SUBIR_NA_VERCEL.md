@@ -10,25 +10,36 @@ Pense assim: a Vercel é como uma **banca de revistas online**. Você entrega o 
 
 Repositório: `Better-Together-Systemic/copa-da-minha-vida`
 
-Na tela **New Project** da Vercel, use **exatamente** estas opções:
+O `index.html` principal fica na **raiz** do repositório (a Vercel serve esse arquivo em `/`).
+
+Na tela **New Project** da Vercel:
 
 | Campo | Valor correto |
 |-------|----------------|
-| **Root Directory** | deixe em **`.`** (raiz do repositório) — **não** use `src` |
+| **Root Directory** | `./` — clique em **Edit**, confirme a raiz e em **Continue** |
 | **Framework Preset** | **Other** |
-| **Build Command** | vazio |
-| **Output Directory** | `src` |
-
-O `vercel.json` na raiz do repo já define isso. Se você colocar **Root Directory = `src`**, a Vercel procura os arquivos em `src/src` e o deploy falha.
+| **Build and Output Settings** | expanda esta seção (importante) |
+| **Build Command** | ative **Override**, deixe **vazio** |
+| **Output Directory** | ative **Override**, deixe **vazio** ou `.` |
 
 Depois de clicar em **Deploy**, o site fica em algo como `https://copadaminhavida.vercel.app`.
 
-Se já criou o projeto com Root Directory errado:
+### Botão Deploy desabilitado (cinza)
 
-1. No painel da Vercel, abra o projeto → **Settings** → **General**
-2. Em **Root Directory**, clique em **Edit** e volte para **`.`** (raiz)
-3. Em **Build & Development Settings**, confira **Output Directory** = `src`
-4. Vá em **Deployments** → nos três pontinhos do último deploy → **Redeploy**
+Se o botão **Deploy** não clica, tente nesta ordem:
+
+1. **Root Directory** — clique em **Edit** ao lado de `./`, selecione a pasta raiz do repo e confirme com **Continue** (só mostrar `./` às vezes não basta).
+2. **Build and Output Settings** — expanda, preset **Other**, **Override** no Build Command ligado e campo vazio.
+3. **Nome do projeto** — use só letras minúsculas, ex.: `copadaminhavida` (sem caracteres especiais).
+4. **Acesso da Vercel ao GitHub** — em [github.com/settings/installations](https://github.com/settings/installations), abra **Vercel** → **Configure** → em **Organization access**, libere **Better-Together-Systemic** (ou reinstale o app da Vercel no org).
+5. Atualize a página depois de dar `git push` no repositório.
+
+### Alternativa sem GitHub (sempre funciona)
+
+1. Abra [vercel.com/new](https://vercel.com/new)
+2. Na parte de baixo, use **Deploy without Git** / arraste uma pasta
+3. Arraste uma pasta que contenha só o `index.html`
+4. Em segundos você recebe o link
 
 ---
 
