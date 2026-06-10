@@ -295,85 +295,11 @@
   .reveal{opacity:0;transform:translateY(24px);transition:all .7s ease;}
   .reveal.on{opacity:1;transform:none;}
 
-  /* ====== FAQ ====== */
-  .faq-sec{
-    background:linear-gradient(180deg,#f3e8d2,var(--creme));
-    padding-bottom:56px;
-  }
-  .faq-sec .selo-faq{
-    display:block;text-align:center;
-    font-family:'Caveat',cursive;
-    font-size:24px;color:var(--rosa);
-    margin-bottom:4px;
-  }
-  .faq-lista{max-width:480px;margin:24px auto 0;}
-  .faq-item{
-    background:var(--branco);
-    border:2px solid rgba(10,107,59,.15);
-    border-radius:18px;
-    margin-bottom:14px;
-    overflow:hidden;
-    box-shadow:0 6px 16px rgba(10,107,59,.07);
-    transition:border-color .25s ease, box-shadow .25s ease;
-  }
-  .faq-item.aberta{
-    border-color:var(--ouro);
-    box-shadow:0 10px 24px rgba(244,179,44,.22);
-  }
-  .faq-q{
-    display:flex;align-items:center;gap:14px;
-    width:100%;
-    background:none;border:none;cursor:pointer;
-    text-align:left;
-    padding:20px 20px;
-    font-family:'Archivo';font-weight:800;
-    font-size:19px;line-height:1.3;
-    color:var(--campo);
-  }
-  .faq-q .n{
-    flex:0 0 auto;
-    width:34px;height:34px;border-radius:50%;
-    background:var(--campo);color:var(--branco);
-    font-family:'Anton';font-size:17px;
-    display:flex;align-items:center;justify-content:center;
-  }
-  .faq-item.aberta .faq-q .n{background:var(--ouro);color:var(--campo-escuro);}
-  .faq-q .txt{flex:1;}
-  .faq-q .seta{
-    flex:0 0 auto;
-    font-size:22px;color:var(--ouro);
-    transition:transform .3s ease;
-  }
-  .faq-item.aberta .faq-q .seta{transform:rotate(180deg);}
-  .faq-a{
-    max-height:0;overflow:hidden;
-    transition:max-height .35s ease;
-  }
-  .faq-a-inner{
-    padding:0 20px 22px 68px;
-    font-size:18px;line-height:1.6;
-    color:#33473b;
-  }
-  .faq-a-inner b{color:var(--campo);}
-  .faq-a-inner .alerta{
-    display:block;background:#fff6e0;
-    border-left:4px solid var(--ouro);
-    border-radius:8px;
-    padding:12px 14px;margin-top:12px;
-    font-size:17px;color:#6b5212;
-  }
-  .faq-a-inner .premio{
-    display:block;font-weight:700;
-    color:var(--campo);margin-top:6px;
-  }
-
   @media (max-width:380px){
     .hero h1{font-size:50px;}
     .hero h1 .ano{font-size:60px;}
     .titulo{font-size:34px;}
     .preco-card .valor{font-size:54px;}
-    .faq-q{font-size:17px;}
-    .faq-a-inner{padding-left:54px;font-size:17px;}
   }
 </style>
 </head>
@@ -408,7 +334,7 @@
     <div class="figurinha reveal">
       <span class="num">3</span>
       <h3>Vira um PDF de recordação</h3>
-      <p>Quando terminar, é só tocar em <b>Salvar / Imprimir</b> e levar o seu álbum para onde quiser. A taça é sua.</p>
+      <p>Quando terminar, é só tocar em <b>Salvar / Imprimir</b> e levar o seu álbum para onde quiser. Ele é seu.</p>
     </div>
   </section>
 
@@ -458,7 +384,7 @@
       </div>
       <div class="ficha">
         <h3>Liliana Pinheiro da Rosa</h3>
-        <p class="papel">Co-autora do projeto</p>
+        <p class="papel">Mentora & Palestrante</p>
         <p>Parceira de criação deste álbum, soma sua sensibilidade e seu olhar para que cada página convide você a contar a sua história com verdade e carinho.</p>
         <a class="insta-btn" href="https://www.instagram.com/lilipdarosa" target="_blank" rel="noopener">
           <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.42.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.42.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41a3.7 3.7 0 0 1-1.38-.9 3.7 3.7 0 0 1-.9-1.38c-.16-.42-.36-1.06-.41-2.23C2.17 15.58 2.16 15.2 2.16 12s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.42-.16 1.06-.36 2.23-.41C8.42 2.17 8.8 2.16 12 2.16M12 0C8.74 0 8.33.01 7.05.07 5.78.13 4.9.33 4.14.63c-.79.3-1.46.72-2.12 1.38C1.35 2.68.94 3.35.63 4.14.33 4.9.13 5.78.07 7.05.01 8.33 0 8.74 0 12s.01 3.67.07 4.95c.06 1.27.26 2.15.56 2.91.3.79.72 1.46 1.38 2.12.66.66 1.33 1.07 2.12 1.38.76.3 1.64.5 2.91.56C8.33 23.99 8.74 24 12 24s3.67-.01 4.95-.07c1.27-.06 2.15-.26 2.91-.56a5.86 5.86 0 0 0 2.12-1.38 5.86 5.86 0 0 0 1.38-2.12c.3-.76.5-1.64.56-2.91.06-1.28.07-1.69.07-4.95s-.01-3.67-.07-4.95c-.06-1.27-.26-2.15-.56-2.91a5.86 5.86 0 0 0-1.38-2.12A5.86 5.86 0 0 0 19.86.63c-.76-.3-1.64-.5-2.91-.56C15.67.01 15.26 0 12 0z"/><path d="M12 5.84A6.16 6.16 0 1 0 18.16 12 6.16 6.16 0 0 0 12 5.84zM12 16a4 4 0 1 1 4-4 4 4 0 0 1-4 4z"/><circle cx="18.41" cy="5.59" r="1.44"/></svg>
@@ -480,92 +406,6 @@
     </div>
 
     <a class="cta" href="https://checkout.infinitepay.io/bettertogethersystemic/DIl0I3sRSO" id="btnComprar" target="_blank" rel="noopener">Quero meu álbum 🏆</a>
-  </section>
-
-  <!-- FAQ -->
-  <section class="faq-sec">
-    <span class="selo-faq">Tira-dúvidas</span>
-    <h2 class="titulo">Perguntas<span class="x"> frequentes</span></h2>
-    <p class="intro-txt">A Copa da Sua Vida 2026™️ — tudo o que você precisa saber antes de entrar em campo.</p>
-
-    <div class="faq-lista">
-
-      <div class="faq-item reveal">
-        <button class="faq-q"><span class="n">1</span><span class="txt">O que é a Copa da Sua Vida 2026?</span><span class="seta">⌄</span></button>
-        <div class="faq-a"><div class="faq-a-inner">É uma experiência online guiada onde você irá construir o seu próprio Álbum da Vida, registrando pessoas, aprendizados e momentos importantes da sua trajetória.</div></div>
-      </div>
-
-      <div class="faq-item reveal">
-        <button class="faq-q"><span class="n">2</span><span class="txt">Vou receber apenas um álbum digital?</span><span class="seta">⌄</span></button>
-        <div class="faq-a"><div class="faq-a-inner"><b>Não.</b> Você receberá o álbum digital e participará de um encontro ao vivo, onde Eliane Simões e Liliana P. da Rosa irão conduzir o preenchimento página por página.</div></div>
-      </div>
-
-      <div class="faq-item reveal">
-        <button class="faq-q"><span class="n">3</span><span class="txt">Preciso preencher o álbum antes do encontro?</span><span class="seta">⌄</span></button>
-        <div class="faq-a"><div class="faq-a-inner"><b>Não.</b> O álbum será preenchido durante a experiência online, que será no dia <b>17/06 às 20h</b>. Venha com disponibilidade para criar seu álbum.</div></div>
-      </div>
-
-      <div class="faq-item reveal">
-        <button class="faq-q"><span class="n">4</span><span class="txt">Como acontece o preenchimento?</span><span class="seta">⌄</span></button>
-        <div class="faq-a"><div class="faq-a-inner">Durante o encontro ao vivo, online, faremos reflexões e exercícios através de perguntas. Cada pessoa preencherá seu próprio álbum no conforto de sua casa.</div></div>
-      </div>
-
-      <div class="faq-item reveal">
-        <button class="faq-q"><span class="n">5</span><span class="txt">Preciso compartilhar minha história com o grupo?</span><span class="seta">⌄</span></button>
-        <div class="faq-a"><div class="faq-a-inner"><b>Não.</b> O compartilhamento é opcional. Você decide o que deseja compartilhar e o que deseja manter apenas para si.</div></div>
-      </div>
-
-      <div class="faq-item reveal">
-        <button class="faq-q"><span class="n">6</span><span class="txt">O álbum é individual ou coletivo?</span><span class="seta">⌄</span></button>
-        <div class="faq-a"><div class="faq-a-inner">O álbum é individual. A experiência é vivida em grupo, online. Cada participante construirá seu próprio registro do álbum.</div></div>
-      </div>
-
-      <div class="faq-item reveal">
-        <button class="faq-q"><span class="n">7</span><span class="txt">Quanto tempo dura o encontro?</span><span class="seta">⌄</span></button>
-        <div class="faq-a"><div class="faq-a-inner">A experiência terá aproximadamente <b>3h</b> de duração.</div></div>
-      </div>
-
-      <div class="faq-item reveal">
-        <button class="faq-q"><span class="n">8</span><span class="txt">O encontro ficará gravado?</span><span class="seta">⌄</span></button>
-        <div class="faq-a"><div class="faq-a-inner"><b>Sim.</b> A gravação ficará disponível para ser adquirida à parte por 30 dias para quem desejar comprar.</div></div>
-      </div>
-
-      <div class="faq-item reveal">
-        <button class="faq-q"><span class="n">9</span><span class="txt">Posso acessar o álbum depois?</span><span class="seta">⌄</span></button>
-        <div class="faq-a"><div class="faq-a-inner"><b>Sim.</b> Após preencher, basta salvar o arquivo em seu dispositivo para mantê-lo como registro da sua trajetória. Depois de preenchido ele é seu!</div></div>
-      </div>
-
-      <div class="faq-item reveal">
-        <button class="faq-q"><span class="n">10</span><span class="txt">Até quando o link do álbum ficará disponível?</span><span class="seta">⌄</span></button>
-        <div class="faq-a"><div class="faq-a-inner">O link ficará disponível até a data informada pela organização.</div></div>
-      </div>
-
-      <div class="faq-item reveal">
-        <button class="faq-q"><span class="n">11</span><span class="txt">Para quem é esta experiência?</span><span class="seta">⌄</span></button>
-        <div class="faq-a"><div class="faq-a-inner">Para pessoas que desejam olhar para sua história com mais consciência, reconhecer sua trajetória e construir um registro significativo da própria vida.</div></div>
-      </div>
-
-      <div class="faq-item reveal">
-        <button class="faq-q"><span class="n">12</span><span class="txt">Preciso ter conhecimento de tecnologia?</span><span class="seta">⌄</span></button>
-        <div class="faq-a"><div class="faq-a-inner">Conhecimento básico para localizar arquivos no seu celular e/ou computador para colocar no seu álbum.</div></div>
-      </div>
-
-      <div class="faq-item reveal">
-        <button class="faq-q"><span class="n">13</span><span class="txt">Posso compartilhar o álbum com outras pessoas?</span><span class="seta">⌄</span></button>
-        <div class="faq-a"><div class="faq-a-inner">Após baixar e salvar o álbum em seu aparelho, o arquivo preenchido é seu e contém a sua história pessoal. Você poderá guardá-lo e acessá-lo sempre que desejar.
-          <span class="alerta">⚠️ Pedimos que não compartilhe o link de acesso ao álbum original em branco, disponibilizado exclusivamente aos participantes da experiência. O álbum é individual. Sua história também.</span>
-        </div></div>
-      </div>
-
-      <div class="faq-item reveal">
-        <button class="faq-q"><span class="n">14</span><span class="txt">O que vou levar ao final da experiência?</span><span class="seta">⌄</span></button>
-        <div class="faq-a"><div class="faq-a-inner">
-          <span class="premio">📖 Seu Álbum da Vida preenchido com reflexões sobre sua trajetória!</span>
-          <span class="premio">⚽ Um registro único da sua história e a lembrança de que a figura mais importante deste álbum é você!</span>
-        </div></div>
-      </div>
-
-    </div>
   </section>
 
   <!-- RODAPÉ -->
@@ -590,25 +430,6 @@
   document.querySelectorAll('.reveal').forEach((el,i)=>{
     el.style.transitionDelay=(i%3*0.08)+'s';
     io.observe(el);
-  });
-
-  // FAQ accordion
-  document.querySelectorAll('.faq-q').forEach(btn=>{
-    btn.addEventListener('click',()=>{
-      const item = btn.parentElement;
-      const ans = item.querySelector('.faq-a');
-      const aberta = item.classList.contains('aberta');
-      // fecha todas
-      document.querySelectorAll('.faq-item').forEach(it=>{
-        it.classList.remove('aberta');
-        it.querySelector('.faq-a').style.maxHeight=null;
-      });
-      // abre a clicada (se nao estava aberta)
-      if(!aberta){
-        item.classList.add('aberta');
-        ans.style.maxHeight = ans.scrollHeight + 'px';
-      }
-    });
   });
 </script>
 </body>
